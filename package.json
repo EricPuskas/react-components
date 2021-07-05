@@ -1,9 +1,8 @@
 {
   "name": "@ericpuskas/react-components",
-  "version": "0.1.10",
+  "version": "0.1.11",
   "description": "React components library (test)",
   "main": "build/index.js",
-  "module": "build/index.es.js",
   "files": [
     "build"
   ],
@@ -19,7 +18,6 @@
     "type": "git",
     "url": "https://github.com/EricPuskas/react-components.git"
   },
-  "type": "module",
   "exports": {
     ".": "./build/index.js",
     "./hooks": "./build/index.js"
