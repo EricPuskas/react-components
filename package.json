@@ -1,6 +1,6 @@
 {
   "name": "@ericpuskas/react-components",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "React components library (test)",
   "main": "build/index.js",
   "module": "build/index.es.js",
@@ -24,8 +24,8 @@
       "./build/index.es.js",
       "./build/index.js"
     ],
-    "./hooks": "./build/hooks/",
-    "./*": "./build/components/*"
+    "./hooks": "./build/hooks/*.js",
+    "./*": "./build/components/*.js"
   },
   "typesVersions": {
     "*": {
