@@ -1,6 +1,6 @@
 {
   "name": "@ericpuskas/react-components",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "React components library (test)",
   "main": "build/index.js",
   "module": "build/index.es.js",
@@ -19,21 +19,17 @@
     "type": "git",
     "url": "https://github.com/EricPuskas/react-components.git"
   },
+  "type": "module",
   "exports": {
-    ".": [
-      "./build/index.es.js",
-      "./build/index.js"
-    ],
-    "./hooks": "./build/hooks/*.js",
-    "./*": "./build/components/*.js"
+    ".": "./build/index.js",
+    "./hooks/*": "./build/hooks/*",
+    "./*": "./build/components/*"
   },
   "typesVersions": {
     "*": {
-      "./build/index.d.ts": [
-        "./build/index.d.ts"
-      ],
       "*": [
-        "build/*"
+        "build/*",
+        "build/*/index.d.ts"
       ]
     }
   },
