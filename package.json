@@ -1,10 +1,10 @@
 {
   "name": "@ericpuskas/react-components",
-  "version": "0.1.14",
+  "version": "0.1.15",
   "description": "React components library (test)",
-  "main": "build/index.js",
+  "main": "dist/index.js",
   "files": [
-    "build"
+    "dist"
   ],
   "scripts": {
     "build": "rollup -c",
@@ -19,14 +19,14 @@
     "url": "https://github.com/EricPuskas/react-components.git"
   },
   "exports": {
-    ".": "./build/index.js",
-    "./*": "./build/*"
+    ".": "./dist/index.js",
+    "./*": "./dist/*"
   },
   "typesVersions": {
     "*": {
       "*": [
-        "build/*",
-        "build/*/index.d.ts"
+        "dist/index.d.ts",
+        "dist/*/index.d.ts"
       ]
     }
   },
