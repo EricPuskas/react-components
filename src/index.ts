@@ -7,4 +7,4 @@ export * from "./Button";
 /**
  * Exports hooks
  */
-export * from "./hooks/index";
+export * from "./hooks";
