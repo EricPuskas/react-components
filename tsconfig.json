@@ -17,5 +17,9 @@
     "build",
     "src/**/*.stories.tsx",
     "src/**/*.test.tsx"
-  ]
+  ],
+  "paths": {
+    "hooks": ["./build/hooks"],
+    "hooks/*": ["./build/hooks/*"]
+  }
 }

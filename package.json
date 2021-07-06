@@ -1,6 +1,6 @@
 {
   "name": "@ericpuskas/react-components",
-  "version": "0.1.13",
+  "version": "0.1.14",
   "description": "React components library (test)",
   "main": "build/index.js",
   "files": [
@@ -20,7 +20,15 @@
   },
   "exports": {
     ".": "./build/index.js",
-    "./hooks": "./build/index.js"
+    "./*": "./build/*"
+  },
+  "typesVersions": {
+    "*": {
+      "*": [
+        "build/*",
+        "build/*/index.d.ts"
+      ]
+    }
   },
   "devDependencies": {
     "@babel/core": "^7.14.6",
