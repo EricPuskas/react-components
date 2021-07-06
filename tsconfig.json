@@ -26,10 +26,5 @@
     "build",
     "src/**/*.stories.tsx",
     "src/**/*.test.tsx"
-  ],
-  "paths": {
-    "@ericpuskas/react-components": ["./build"],
-    "@ericpuskas/react-components/hooks": ["./build/hooks"],
-    "@ericpuskas/react-components/*": ["./build/*"]
-  }
+  ]
 }
