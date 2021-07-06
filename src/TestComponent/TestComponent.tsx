@@ -18,7 +18,7 @@ export const TestComponent: React.FC<TestComponentProps> = (props) => {
 
   return (
     <div className={classes.TestComponent}>
-      <h1>I'm the test component</h1>
+      <h1>{props.theme}</h1>
     </div>
   );
 };

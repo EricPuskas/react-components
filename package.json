@@ -1,10 +1,12 @@
 {
   "name": "@ericpuskas/react-components",
-  "version": "0.1.15",
+  "version": "0.1.17",
   "description": "React components library (test)",
-  "main": "dist/index.js",
+  "main": "build/index.js",
+  "module": "build/index.es.js",
+  "jsnext:main": "build/index.es.js",
   "files": [
-    "dist"
+    "build"
   ],
   "scripts": {
     "build": "rollup -c",
@@ -19,16 +21,8 @@
     "url": "https://github.com/EricPuskas/react-components.git"
   },
   "exports": {
-    ".": "./dist/index.js",
-    "./*": "./dist/*"
-  },
-  "typesVersions": {
-    "*": {
-      "*": [
-        "dist/index.d.ts",
-        "dist/*/index.d.ts"
-      ]
-    }
+    ".": "./build/index.js",
+    "./hooks": "./build/index.js"
   },
   "devDependencies": {
     "@babel/core": "^7.14.6",
@@ -43,16 +37,18 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "rollup": "^2.52.7",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-typescript2": "^0.30.0",
     "typescript": "^4.3.5"
   },
   "peerDependencies": {
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
     "@material-ui/core": "^4.11.4",
     "@material-ui/icons": "^4.11.2",
-    "@material-ui/lab": "^4.0.0-alpha.58"
+    "@material-ui/lab": "^4.0.0-alpha.58",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   },
   "dependencies": {
     "@material-ui/core": "^4.11.4",
