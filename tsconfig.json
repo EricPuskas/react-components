@@ -28,7 +28,7 @@
   ],
   "paths": {
     ".": ["./build/index.js"],
-    "hooks": ["./build/hooks"],
-    "hooks/*": ["./build/hooks/*"]
+    "./hooks": ["./build/hooks"],
+    "./**": ["./build/**/index.js"]
   }
 }
